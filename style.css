@@ -1,1 +1,23 @@
+/* ============================================================
+   Jessica Luo
+   Texas Academy of Mathematics and Science - Denton, TX
+   ============================================================ */
 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: borderbox;
+}
+:root{
+  --color-bg: #fafaf8;
+  --color-text: #1a1a1a;
+  --color-muted: #666666;
+  --color-accent: #2a52be;
+  --color-border: #e0e0e0;
+
+  --font-serif: 'Georgia', serif;
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --max-width: 680 px;
+  --spacing-page: 2rem;
+}
