@@ -9,18 +9,20 @@
   box-sizing: borderbox;
 }
 :root{
+   /* color scheme */
   --color-bg: #fafaf8;
   --color-text: #1a1a1a;
   --color-muted: #666666;
   --color-accent: #2a52be;
   --color-border: #e0e0e0;
-
+   /* fonts */
   --font-serif: 'Georgia', serif;
   --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+   /* spacing */
   --max-width: 680 px;
   --spacing-page: 2rem;
 }
+/* Style applied to whole page */
 body{
    font-family: var(--font-sans);
    font-size: 16px;
@@ -30,4 +32,114 @@ body{
    max-width: var(--max-width);
    margin: 0 auto;
    padding: 0 var(--spacing-page);
+}
+/* -- NAVIGATION -- */
+nav{
+   display: flex;
+   gap: 1.5rem;
+   padding: 1.5rem 0;
+   border-bottom: 1px solid var(--color-border);
+   margin-bottom: 3rem;
+}
+nav a{
+   font-size: 0.85rem;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: var(--color-muted);
+   transition: color 0.2s;
+}
+nav a: hover {
+   color: var(--color-accent);
+}
+/* -- HEADINGS -- */
+h1{
+   font-family: var(--font-serif);
+   font-size: 2.2rem;
+   font-weight: normal;
+   line-height: 1.2s;
+   margin-bottom: 0.5rem;
+}
+h2{
+   font-family: var(--font-serif);
+   font-size: 1.4rem;
+   font-weight: normal;
+   margin-top: 2.5rem;
+   margin-bottom: 0.75rem;
+}
+h3{
+   font-size: 1rem;
+   font-weight: 600;
+   margin-top: 1.5rem;
+   margin-bottom: 0.4rem;
+}
+/* -- PARAGRAPHS AND TEXT -- */
+p{
+   margin-bottom: 1.2rem;
+   color: var(--color-text);
+}
+.subtitle{
+   color: var(--color-muted);
+   font-size: 1.05rem;
+   margin-bottom: 2rem;
+}
+a{
+   color: var(--color-accent);
+   text-decoration: underline;
+   text-underline-offset: 3px;
+}
+a:hover{
+   opacity: 0.75;
+}
+/* -- DIVIDER -- */
+hr{
+   border: none;
+   border-top: 1px solid var(--color-border);
+   margin: 2.5rem 0;
+}
+/* -- PAGE INTRO SECTION --  */
+.page-header{
+   margin-bottom: 2.5rem;
+   padding-bottom: 2rem;
+   border-bottom: 1px solid var(--color-border);
+}
+/* -- PROJECT/RESEARCH -- */
+.card{
+   padding: 1.25rem 0;
+   border-bottom: 1px solid var(--color-border);
+}
+.card:last-child{
+   border-bottom: none;
+}
+.card-title{
+   font-weight: 600;
+   margin-bottom: 0.25rem;
+}
+.card-meta{
+   font-size: 0.85rem;
+   color: var(--color-muted);
+   margin-bottom: 0.5rem;
+}
+/* -- FOOTER -- */
+footer{
+   margin-top: 4rem;
+   padding: 1.5rem 0;
+   border-top: 1px solid var(--color-border);
+   font-size: 0.85rem;
+   color: var(--color-muted);
+   text-align: center;
+}
+/* -- RESPONSIVE -- */
+@media(max-width: 480px) {
+   body {
+      font-size: 15px;
+      padding: 0 1.25rem;
+   }
+   nav {
+      gap: 1rem;
+      flex-wrap: wrap;
+   }
+   h1 {
+      font-size: 1.8rem;
+   }
 }
