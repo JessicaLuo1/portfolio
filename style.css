@@ -93,8 +93,8 @@ a:hover{
 }
 .reg-photo {
   width: 100%;
-  max-width: 400px;
-  height: 220px;
+  max-width: 500px;
+  height: 400px;
   object-fit: cover;
   border-radius: 6px;
   display: block;
