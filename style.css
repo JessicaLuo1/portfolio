@@ -92,7 +92,7 @@ a:hover{
    opacity: 0.75;
 }
 .reg-photo {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   height: 500px;
   object-fit: cover;
