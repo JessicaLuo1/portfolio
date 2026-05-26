@@ -94,7 +94,7 @@ a:hover{
 .reg-photo {
   width: 100%;
   max-width: 100%;
-  height: auto;     /* ← this is the key change, lets height scale naturally */
+  height: auto;    
   border-radius: 6px;
   display: block;
   margin: 1rem 0;
@@ -119,6 +119,14 @@ hr{
    border-radius: 50%;
    display: block;
    margin-bottom: 1.5rem;
+}
+.bbth-photo {
+  width: 100%;
+  max-width: 400px;   /* ← controls the size, lower = smaller */
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 1rem 0;
 }
 /* -- PROJECT/RESEARCH -- */
 .card{
