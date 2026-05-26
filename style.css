@@ -93,9 +93,8 @@ a:hover{
 }
 .reg-photo {
   width: 100%;
-  max-width: 1000px;
-  height: 500px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;     /* ← this is the key change, lets height scale naturally */
   border-radius: 6px;
   display: block;
   margin: 1rem 0;
