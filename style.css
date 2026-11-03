@@ -120,7 +120,7 @@ hr{
    display: block;
    margin-bottom: 1.5rem;
 }
-.bbth-photo {
+.other-photo {
   width: 100%;
   max-width: 400px;   /* ← controls the size, lower = smaller */
   height: auto;
